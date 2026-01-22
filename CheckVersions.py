@@ -17,17 +17,18 @@ Outputs:
 - sklearn version
 - Hello World!
 
-Author: Your Full Name
-Creation Date: YYYY-MM-DD
-Sources: Lecture slides, Assignment 1 instructions
+Author: Abhiroop Goel
+Creation Date: 22nd January 2026
+Sources: Lecture slides, Assignment 1 instructions, ChatGpt, StackOverflow.
 """
-
+""" Here we use import command to import the modules of the required libraries """
 import sys          # Access Python version
 import scipy        # Scientific computing
 import numpy        # Numerical arrays
 import pandas       # Data handling
 import sklearn      # Machine learning library
 
+""" Here we are calling the print function to print the name of the library along with its version which is called by library._version_"""
 # Print Python version
 print("Python:", sys.version)
 

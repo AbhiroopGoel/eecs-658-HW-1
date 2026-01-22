@@ -8,20 +8,25 @@ using 2-fold cross-validation. Outputs accuracy, confusion matrix,
 precision, recall, and F1 scores.
 
 Inputs:
-iris.csv dataset
+iris.csv dataset 
+*Already provided in lecture modules 
 
 Outputs:
 - Overall accuracy
 - Confusion matrix
 - Precision, Recall, F1 for each Iris class
 
-Author: Your Full Name
-Creation Date: YYYY-MM-DD
+Author: Abhiroop Goel
+Creation Date: 22nd January 2026
 Sources:
 - EECS 658 Supervised Learning slides
 - Assignment 1 instructions
+- ChatGpt
+- Stackoverflow 
+- github
 """
 
+""" Here use import the libraries that we need to initialize the GaussianNB, and then used sklearn module to access our matrrics and formulas"""
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -34,7 +39,7 @@ dataset = pd.read_csv(
     names=["sepal_length", "sepal_width", "petal_length", "petal_width", "class"]
 )
 
-# Separate features and labels
+# Separate features and labels (we separate both using iloc to split the string and then get the values)
 X = dataset.iloc[:, 0:4].values
 y = dataset.iloc[:, 4].values
 
